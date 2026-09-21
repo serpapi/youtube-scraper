@@ -18,9 +18,9 @@ https://serpapi.com/search?engine=youtube&search_query=coffee&gl=us&hl=en&api_ke
 - Use `search_query`, not `q`. The examples search for `coffee`; the Python and JavaScript examples also set `gl=us` and `hl=en`.
 
 ## Related Scrapers
-- YouTube Video Scraper
-- YouTube Video Transcript Scraper
-- YouTube Channel Scraper
+- [YouTube Video Scraper](https://github.com/serpapi/youtube-video-scraper/)
+- [YouTube Video Transcript Scraper](https://github.com/serpapi/youtube-video-transcript-scraper/)
+- [YouTube Channel Scraper](https://github.com/serpapi/youtube-channel-scraper/)
 
 ## Code examples
 
