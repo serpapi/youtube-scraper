@@ -16,7 +16,11 @@ https://serpapi.com/search?engine=youtube&search_query=coffee&gl=us&hl=en&api_ke
 
 - Register at [SerpApi to get your API key](https://serpapi.com?utm_source=github_youtube_search_scraper). Replace `YOUR_SERPAPI_API_KEY` in the examples and keep your key private; never commit it.
 - Use `search_query`, not `q`. The examples search for `coffee`; the Python and JavaScript examples also set `gl=us` and `hl=en`.
-- Use [YouTube Channel Scraper](../youtube-channel-scraper/README.md) to list one channel's content instead.
+
+## Related Scrapers
+- YouTube Video Scraper
+- YouTube Video Transcript Scraper
+- YouTube Channel Scraper
 
 ## Code examples
 
@@ -192,9 +196,9 @@ For filters and sorting, select the desired options on YouTube and copy the `sp`
 
 ### Follow-up requests
 
-- For channel metadata and a channel's uploads, use [YouTube Channel Scraper](../youtube-channel-scraper/README.md) with `engine=youtube_channel` and a channel handle or raw `UC…` ID.
-- For full video details and available comments, pass a returned `video_id` as `v` to `engine=youtube_video`. See [YouTube Video Scraper](../youtube-video-scraper/README.md) and the [Video API documentation](https://serpapi.com/youtube-video-api).
-- For available transcript text, use `engine=youtube_video_transcript` with the same video ID as `v`. See [YouTube Video Transcript Scraper](../youtube-video-transcript-scraper/README.md) and the [Transcript API documentation](https://serpapi.com/youtube-video-transcript).
+- For channel metadata and a channel's uploads, use YouTube Channel Scraper.
+- For full video details and available comments, pass a returned `video_id` as `v` to `engine=youtube_video`. See the [Video API documentation](https://serpapi.com/youtube-video-api).
+- For available transcript text, use `engine=youtube_video_transcript` with the same video ID as `v`. See the [Transcript API documentation](https://serpapi.com/youtube-video-transcript).
 
 These are separate requests, not fields guaranteed on the search response. Search results may supply a `serpapi_link` for video details; authenticate follow-ups with your own key.
 
